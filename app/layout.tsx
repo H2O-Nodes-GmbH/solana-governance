@@ -7,29 +7,31 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.solanagovernance.com"),
-  title: "Solana Governance",
+  title: {
+    default: "Solana Governance",
+    template: "%s | Solana Governance",
+  },
+  applicationName: "Solana Governance",
   description:
-    "Track the progress of Solana governance, the Constitution, and Declaration. Join community discussions led by Nick Almond (Jito Foundation) and Tushar Jain (Multicoin Capital) to shape Solana's decentralized governance framework.",
+    "Solana Governance — track SGPs, the Constitution and Declaration, validator community calls, and the official voting platform at governance.solana.com.",
   keywords: [
     "Solana Governance",
     "Solana Constitution",
-    "Blockchain Governance",
-    "Decentralized Governance",
-    "Solana Protocol",
-    "SGP",
     "Solana Governance Proposal",
-    "Validator Governance",
+    "SGP",
+    "Solana validator governance",
+    "governance.solana.com",
+    "decentralized governance",
+    "Solana Declaration",
     "Jito Foundation",
     "Multicoin Capital",
-    "Nick Almond",
-    "Tushar Jain",
-    "Breakpoint Conference",
   ],
   authors: [{ name: "Solana Governance Initiative" }],
   creator: "H2O Nodes",
   publisher: "Solana Governance Initiative",
+  category: "technology",
   alternates: {
-    canonical: "/",
+    canonical: "https://www.solanagovernance.com",
   },
   openGraph: {
     type: "website",
@@ -38,7 +40,7 @@ export const metadata: Metadata = {
     siteName: "Solana Governance",
     title: "Solana Governance",
     description:
-      "Track the progress of Solana governance, the Constitution, and Declaration. Join community discussions to shape Solana's decentralized governance framework.",
+      "Track Solana governance proposals (SGPs), community discussions, and the Constitution initiative — vote at governance.solana.com.",
     images: [
       {
         url: "/solana-logo.png",
@@ -52,7 +54,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Solana Governance",
     description:
-      "Track the progress of Solana governance, the Constitution, and Declaration. Join community discussions to shape Solana's governance.",
+      "Track Solana governance proposals (SGPs), community discussions, and the Constitution initiative — vote at governance.solana.com.",
     images: ["/solana-logo.png"],
     creator: "@H2oNodes",
   },

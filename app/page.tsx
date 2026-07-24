@@ -14,58 +14,72 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Organization",
-        name: "Solana Governance Initiative",
+        "@id": "https://www.solanagovernance.com/#organization",
+        name: "Solana Governance",
         url: "https://www.solanagovernance.com",
-        logo: "https://www.solanagovernance.com/solana-logo.png",
-        description: "Community-driven initiative to establish governance framework for the Solana blockchain",
-        sameAs: ["https://x.com/H2oNodes", "https://discord.gg/solana"],
+        logo: {
+          "@type": "ImageObject",
+          url: "https://www.solanagovernance.com/solana-logo.png",
+        },
+        description:
+          "Community-driven initiative tracking Solana governance proposals, the Constitution and Declaration, and validator community discussions.",
+        sameAs: [
+          "https://x.com/H2oNodes",
+          "https://x.com/maxh2onodes",
+          "https://governance.solana.com/proposals",
+          "https://github.com/solana-foundation/solana-governance-proposals",
+        ],
       },
       {
         "@type": "WebSite",
+        "@id": "https://www.solanagovernance.com/#website",
         name: "Solana Governance",
         url: "https://www.solanagovernance.com",
-        description: "Track the progress of Solana governance, the Constitution, and Declaration",
+        description:
+          "Track Solana governance proposals (SGPs), community discussions, and the Constitution initiative.",
         publisher: {
-          "@type": "Organization",
-          name: "Solana Governance Initiative",
+          "@id": "https://www.solanagovernance.com/#organization",
         },
+        inLanguage: "en-US",
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.solanagovernance.com/#webpage",
+        url: "https://www.solanagovernance.com",
+        name: "Solana Governance",
+        isPartOf: {
+          "@id": "https://www.solanagovernance.com/#website",
+        },
+        about: {
+          "@id": "https://www.solanagovernance.com/#organization",
+        },
+        description:
+          "Solana Governance — SGPs, Constitution and Declaration documents, validator community calls, and links to the official voting platform.",
+        inLanguage: "en-US",
       },
       {
         "@type": "Event",
         name: "Monthly Validator Community Calls",
-        description: "Monthly validator community call, featuring an update on the latest from governance discussions",
-        startDate: "2024-01-01T18:00:00Z",
-        endDate: "2024-12-31T19:00:00Z",
+        description:
+          "Monthly validator community call featuring updates and discussion on Solana governance.",
         eventAttendanceMode: "https://schema.org/OnlineEventAttendanceMode",
         eventStatus: "https://schema.org/EventScheduled",
+        eventSchedule: {
+          "@type": "Schedule",
+          repeatFrequency: "P1M",
+          byDay: "https://schema.org/Thursday",
+          startTime: "18:00:00",
+          scheduleTimezone: "UTC",
+        },
         location: {
           "@type": "VirtualLocation",
           url: "https://docs.google.com/forms/d/e/1FAIpQLSenJo3P35l2BMTfpth4lOQvIZdipFiSlaiuZ5Lghkb_naDujQ/viewform",
         },
-        organizer: [
-          {
-            "@type": "Person",
-            name: "Nick Almond",
-            affiliation: "Jito Foundation",
-          },
-          {
-            "@type": "Person",
-            name: "Tushar Jain",
-            affiliation: "Multicoin Capital",
-          },
-        ],
-      },
-      {
-        "@type": "Event",
-        name: "Breakpoint Conference - Constitution Signing",
-        description: "Official signing ceremony for the Solana Constitution at the annual Breakpoint conference",
-        startDate: "2025-12-01",
-        eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-        eventStatus: "https://schema.org/EventScheduled",
-        location: {
-          "@type": "Place",
-          name: "Breakpoint Conference",
-          url: "https://solana.com/breakpoint",
+        organizer: {
+          "@type": "Person",
+          name: "Max Sherwood",
+          affiliation: "H2O Nodes",
+          url: "https://x.com/maxh2onodes",
         },
       },
     ],
