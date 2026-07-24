@@ -22,8 +22,8 @@ async function getPullRequests(): Promise<PullRequest[] | null> {
         headers: {
           Accept: "application/vnd.github+json",
         },
-        // Revalidate hourly to stay within GitHub's unauthenticated rate limits
-        next: { revalidate: 3600 },
+        // Revalidate daily to stay within GitHub's unauthenticated rate limits
+        next: { revalidate: 86400 },
       },
     )
 
