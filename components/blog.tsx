@@ -1,8 +1,16 @@
 "use client"
 
 import { ExternalLink } from "lucide-react"
+import { SectionHeader } from "@/components/section-header"
 
 const articles = [
+  {
+    title: "Solana Governance: A Comprehensive Analysis",
+    author: "Lostin",
+    url: "https://www.helius.dev/blog/solana-governance--a-comprehensive-analysis",
+    publication: "Helius",
+    date: "Mar 26, 2025",
+  },
   {
     title: "Solana is Rebuilding its Social Contract.",
     author: "Othman Gbadamassi",
@@ -16,10 +24,7 @@ export function Blog() {
   return (
     <section className="py-8 md:py-12 bg-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">Blog</h2>
-          <p className="text-muted-foreground">Articles and insights on Solana governance</p>
-        </div>
+        <SectionHeader title="Ecosystem Content" description="Articles and insights on Solana governance" />
 
         <div className="max-w-2xl mx-auto space-y-4">
           {articles.map((article, index) => (

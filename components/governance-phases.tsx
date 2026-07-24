@@ -2,9 +2,10 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import { ChevronLeft, ChevronRight } from "lucide-react"
+import { ChevronLeft, ChevronRight, ExternalLink, FileText } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { ProposalSimulator } from "./proposal-simulator"
+import { SectionHeader } from "@/components/section-header"
 
 const phases = [
   {
@@ -55,14 +56,31 @@ export function GovernancePhases() {
   return (
     <section className="py-12 md:py-16 px-6 bg-muted/30">
       <div className="container mx-auto max-w-6xl">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-[#14F195] to-[#9945FF] bg-clip-text text-transparent">
-            Proposed Governance Process
-          </h2>
-          <p className="text-muted-foreground text-lg">Explore the five phases of the proposal process</p>
-          <div className="mt-6">
-            <ProposalSimulator />
-          </div>
+        <div className="mb-8">
+          <SectionHeader
+            title="Governance Process"
+            description="Explore the five phases of the proposal process"
+            className="mb-6"
+          />
+          <a
+            href="https://docs.governance.solana.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mx-auto flex max-w-xl items-center justify-between gap-4 rounded-lg border border-border bg-card p-5 text-left transition-all hover:border-primary/50 hover:shadow-md group"
+          >
+            <div className="flex items-center gap-3">
+              <FileText className="h-6 w-6 flex-shrink-0 text-primary" />
+              <div>
+                <h3 className="text-lg font-semibold text-foreground transition-colors group-hover:text-primary">
+                  Governance Docs
+                </h3>
+                <p className="mt-0.5 text-sm text-muted-foreground">
+                  Technical documentation at docs.governance.solana.com
+                </p>
+              </div>
+            </div>
+            <ExternalLink className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+          </a>
         </div>
 
         <div className="relative">
@@ -118,6 +136,10 @@ export function GovernancePhases() {
                 <ChevronRight className="h-5 w-5" />
               </Button>
             </div>
+          </div>
+
+          <div className="mt-6 text-center">
+            <ProposalSimulator />
           </div>
         </div>
       </div>

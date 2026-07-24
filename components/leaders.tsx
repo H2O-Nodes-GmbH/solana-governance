@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Building2 } from "lucide-react"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
+import { SectionHeader } from "@/components/section-header"
 
 const leaders = [
   {
@@ -70,14 +71,10 @@ export function Leaders() {
   return (
     <section id="leaders" className="bg-muted/30 py-8 sm:py-12">
       <div className="container mx-auto px-6 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-2xl text-center mb-8">
-          <h2 className="text-balance text-4xl font-bold tracking-tight text-foreground sm:text-5xl">
-            Governance Contributors
-          </h2>
-          <p className="mt-4 text-pretty text-lg leading-relaxed text-muted-foreground">
-            Meet the community members guiding Solana governance
-          </p>
-        </div>
+        <SectionHeader
+          title="Governance Contributors"
+          description="Meet the community members guiding Solana governance"
+        />
 
         <div className="mx-auto grid max-w-5xl gap-3 sm:grid-cols-2">
           {leaders.map((leader) => (

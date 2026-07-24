@@ -1,4 +1,5 @@
 import { ExternalLink, GitPullRequest, GitMerge, CircleDot } from "lucide-react"
+import { SectionHeader } from "@/components/section-header"
 
 type PullRequest = {
   number: number
@@ -55,15 +56,10 @@ export async function SGPs() {
   return (
     <section className="py-8 md:py-12">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-2">
-            <span className="mr-2">🗳️</span>
-            Solana Governance Proposals
-          </h2>
-          <p className="text-muted-foreground text-pretty">
-            Track active Solana Governance Proposals (SGPs) as they are drafted, reviewed, and discussed on GitHub
-          </p>
-        </div>
+        <SectionHeader
+          title="Solana Governance Proposals"
+          description="Track active Solana Governance Proposals (SGPs) as they are drafted, reviewed, and discussed on GitHub"
+        />
 
         <div className="max-w-2xl mx-auto">
           {pullRequests && pullRequests.length > 0 ? (

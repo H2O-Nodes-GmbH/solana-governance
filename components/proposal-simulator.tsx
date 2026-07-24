@@ -348,7 +348,7 @@ export function ProposalSimulator() {
         size="lg"
         className="gap-2 bg-gradient-to-r from-[#9945FF] to-[#14F195] hover:opacity-90 text-white font-semibold"
       >
-        Simulate Your Own Proposal
+        Simulate a Proposal
         <ArrowRight className="h-5 w-5" />
       </Button>
 

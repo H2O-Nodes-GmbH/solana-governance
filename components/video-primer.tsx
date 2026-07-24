@@ -1,15 +1,14 @@
 import { ExternalLink } from "lucide-react"
+import { SectionHeader } from "@/components/section-header"
 
 export function VideoPrimer() {
   return (
     <section className="py-12 px-6 bg-background">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Video Primer
-          </h2>
-          <p className="text-muted-foreground text-lg">Watch Tushar and Nick's talk from Breakpoint 2025</p>
-        </div>
+        <SectionHeader
+          title="Video Primer"
+          description="Watch Tushar and Nick's talk from Breakpoint 2025"
+        />
 
         <div className="relative aspect-video w-full rounded-lg overflow-hidden shadow-lg border border-border bg-card">
           <iframe

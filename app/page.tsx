@@ -91,10 +91,10 @@ export default function Home() {
       <main className="min-h-screen">
         <Hero />
         <SGPs />
-        <Documents />
         <VideoPrimer />
         <GovernancePhases />
         <Blog />
+        <Documents />
         <Timeline />
         <Leaders />
         <Footer />

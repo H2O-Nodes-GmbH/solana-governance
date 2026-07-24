@@ -1,6 +1,7 @@
 import { ExternalLink } from "lucide-react"
 import { Card } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
+import { SectionHeader } from "@/components/section-header"
 
 export function Documents() {
   const documents = [
@@ -48,13 +49,10 @@ export function Documents() {
   return (
     <section className="py-12 md:py-16 px-6 bg-gradient-to-b from-background to-muted/20">
       <div className="container mx-auto max-w-4xl">
-        <div className="text-center mb-8">
-          <div className="text-5xl mb-4">📄</div>
-          <h2 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-            Draft Documents
-          </h2>
-          <p className="text-muted-foreground mt-2">Review and contribute to the foundational documents</p>
-        </div>
+        <SectionHeader
+          title="Core Documents"
+          description="Review and contribute to the foundational documents"
+        />
         <div className="grid md:grid-cols-2 gap-4">
           {documents.map((doc) => (
             <Card key={doc.title} className="p-6 hover:shadow-lg transition-all border-2 hover:border-primary/50">
