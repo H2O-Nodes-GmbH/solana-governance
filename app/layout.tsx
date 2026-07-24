@@ -7,7 +7,7 @@ import "./globals.css"
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.solanagovernance.com"),
-  title: "Solana Governance | Community-Driven Governance Initiative",
+  title: "Solana Governance",
   description:
     "Track the progress of Solana governance, the Constitution, and Declaration. Join community discussions led by Nick Almond (Jito Foundation) and Tushar Jain (Multicoin Capital) to shape Solana's decentralized governance framework.",
   keywords: [
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://www.solanagovernance.com",
     siteName: "Solana Governance",
-    title: "Solana Governance | Community-Driven Governance Initiative",
+    title: "Solana Governance",
     description:
       "Track the progress of Solana governance, the Constitution, and Declaration. Join community discussions to shape Solana's decentralized governance framework.",
     images: [
@@ -44,13 +44,13 @@ export const metadata: Metadata = {
         url: "/solana-logo.png",
         width: 1200,
         height: 630,
-        alt: "Solana Governance Initiative",
+        alt: "Solana Governance",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Solana Governance | Community-Driven Initiative",
+    title: "Solana Governance",
     description:
       "Track the progress of Solana governance, the Constitution, and Declaration. Join community discussions to shape Solana's governance.",
     images: ["/solana-logo.png"],
