@@ -14,7 +14,7 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Organization",
-        name: "Solana Constitution Initiative",
+        name: "Solana Governance Initiative",
         url: "https://www.solanagovernance.com",
         logo: "https://www.solanagovernance.com/solana-logo.png",
         description: "Community-driven initiative to establish governance framework for the Solana blockchain",
@@ -22,12 +22,12 @@ export default function Home() {
       },
       {
         "@type": "WebSite",
-        name: "Solana Constitution",
+        name: "Solana Governance",
         url: "https://www.solanagovernance.com",
-        description: "Track the progress of the Solana Constitution and Declaration",
+        description: "Track the progress of Solana governance, the Constitution, and Declaration",
         publisher: {
           "@type": "Organization",
-          name: "Solana Constitution Initiative",
+          name: "Solana Governance Initiative",
         },
       },
       {

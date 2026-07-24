@@ -1,4 +1,4 @@
-import { ExternalLink, GitPullRequest, GitMerge, CircleDot, Vote } from "lucide-react"
+import { ExternalLink, GitPullRequest, GitMerge, CircleDot } from "lucide-react"
 
 type PullRequest = {
   number: number
@@ -63,28 +63,6 @@ export async function SGPs() {
           <p className="text-muted-foreground text-pretty">
             Track active Solana Governance Proposals (SGPs) as they are drafted, reviewed, and discussed on GitHub
           </p>
-        </div>
-
-        <div className="max-w-2xl mx-auto mb-6">
-          <a
-            href="https://governance.solana.com/proposals"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-between gap-4 p-5 rounded-lg border border-primary/40 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 hover:border-primary transition-all group"
-          >
-            <div className="flex items-center gap-3">
-              <Vote className="w-6 h-6 text-primary flex-shrink-0" />
-              <div>
-                <h3 className="text-lg font-semibold text-foreground group-hover:text-primary transition-colors">
-                  Vote on the Governance Platform
-                </h3>
-                <p className="text-sm text-muted-foreground mt-0.5">
-                  Cast and track votes at governance.solana.com
-                </p>
-              </div>
-            </div>
-            <ExternalLink className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors flex-shrink-0" />
-          </a>
         </div>
 
         <div className="max-w-2xl mx-auto">
