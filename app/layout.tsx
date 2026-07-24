@@ -6,6 +6,7 @@ import { Suspense } from "react"
 import "./globals.css"
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.solanagovernance.com"),
   title: "Solana Constitution | Community-Driven Governance Initiative",
   description:
     "Track the progress of the Solana Constitution and Declaration. Join community discussions led by Nick Almond (Jito Foundation) and Tushar Jain (Multicoin Capital) to shape Solana's decentralized governance framework.",
@@ -27,10 +28,13 @@ export const metadata: Metadata = {
   authors: [{ name: "Solana Constitution Initiative" }],
   creator: "H2O Nodes",
   publisher: "Solana Constitution Initiative",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://solana-constitution.com",
+    url: "https://www.solanagovernance.com",
     siteName: "Solana Constitution",
     title: "Solana Constitution | Community-Driven Governance Initiative",
     description:
@@ -63,7 +67,6 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
-  generator: "v0.app",
 }
 
 const inter = Inter({

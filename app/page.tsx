@@ -15,15 +15,15 @@ export default function Home() {
       {
         "@type": "Organization",
         name: "Solana Constitution Initiative",
-        url: "https://solana-constitution.com",
-        logo: "https://solana-constitution.com/solana-logo.png",
+        url: "https://www.solanagovernance.com",
+        logo: "https://www.solanagovernance.com/solana-logo.png",
         description: "Community-driven initiative to establish governance framework for the Solana blockchain",
         sameAs: ["https://x.com/H2oNodes", "https://discord.gg/solana"],
       },
       {
         "@type": "WebSite",
         name: "Solana Constitution",
-        url: "https://solana-constitution.com",
+        url: "https://www.solanagovernance.com",
         description: "Track the progress of the Solana Constitution and Declaration",
         publisher: {
           "@type": "Organization",
