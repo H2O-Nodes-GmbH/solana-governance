@@ -28,23 +28,42 @@ export function Hero() {
             A community-driven initiative to establish foundational governance principles for the Solana ecosystem, led
             by industry leaders and shaped by community voices.
           </p>
-          <a
-            href="https://governance.solana.com/proposals"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mx-auto flex max-w-xl items-center justify-between gap-4 rounded-lg border border-primary/40 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 p-5 text-left transition-all hover:border-primary group"
-          >
-            <div className="flex items-center gap-3">
-              <Vote className="h-6 w-6 flex-shrink-0 text-primary" />
-              <div>
-                <h2 className="text-lg font-semibold text-foreground transition-colors group-hover:text-primary">
-                  Vote on the Governance Platform
-                </h2>
-                <p className="mt-0.5 text-sm text-muted-foreground">Cast and track votes at governance.solana.com</p>
+          <div className="mx-auto flex max-w-xl flex-col gap-3">
+            <a
+              href="https://governance.solana.com/proposals"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between gap-4 rounded-lg border border-primary/40 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 p-5 text-left transition-all hover:border-primary group"
+            >
+              <div className="flex items-center gap-3">
+                <Vote className="h-6 w-6 flex-shrink-0 text-primary" />
+                <div>
+                  <h2 className="text-lg font-semibold text-foreground transition-colors group-hover:text-primary">
+                    Vote on the Governance Platform
+                  </h2>
+                  <p className="mt-0.5 text-sm text-muted-foreground">Cast and track votes at governance.solana.com</p>
+                </div>
               </div>
-            </div>
-            <ExternalLink className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
-          </a>
+              <ExternalLink className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+            </a>
+            <a
+              href="https://solgov.app/?tab=votes"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between gap-4 rounded-lg border border-primary/40 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 p-5 text-left transition-all hover:border-primary group"
+            >
+              <div className="flex items-center gap-3">
+                <FileText className="h-6 w-6 flex-shrink-0 text-primary" />
+                <div>
+                  <h2 className="text-lg font-semibold text-foreground transition-colors group-hover:text-primary">
+                    Voting Tracker
+                  </h2>
+                  <p className="mt-0.5 text-sm text-muted-foreground">Follow live vote results at solgov.app</p>
+                </div>
+              </div>
+              <ExternalLink className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+            </a>
+          </div>
         </div>
       </div>
     </section>
