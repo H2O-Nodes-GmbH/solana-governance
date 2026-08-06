@@ -1,4 +1,4 @@
-import { ExternalLink, FileText, Vote } from "lucide-react"
+import { ExternalLink, FileText, ScrollText, Vote } from "lucide-react"
 import Image from "next/image"
 
 export function Hero() {
@@ -32,6 +32,23 @@ export function Hero() {
             Independent community resource — not affiliated with Solana Labs or the Solana Foundation.
           </p>
           <div className="mx-auto flex max-w-xl flex-col gap-3">
+            <a
+              href="https://solanagov.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-between gap-4 rounded-lg border border-primary/40 bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 p-5 text-left transition-all hover:border-primary group"
+            >
+              <div className="flex items-center gap-3">
+                <ScrollText className="h-6 w-6 flex-shrink-0 text-primary" />
+                <div>
+                  <h2 className="text-lg font-semibold text-foreground transition-colors group-hover:text-primary">
+                    Read the Solana Constitution
+                  </h2>
+                  <p className="mt-0.5 text-sm text-muted-foreground">View and sponsor at solanagov.com</p>
+                </div>
+              </div>
+              <ExternalLink className="h-5 w-5 flex-shrink-0 text-muted-foreground transition-colors group-hover:text-primary" />
+            </a>
             <a
               href="https://governance.solana.com/proposals"
               target="_blank"

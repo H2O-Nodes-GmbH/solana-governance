@@ -5,6 +5,13 @@ import { SectionHeader } from "@/components/section-header"
 
 const articles = [
   {
+    title: "The new Solana Governance system has gone live",
+    author: "Nick Almond",
+    url: "https://x.com/drnicka/status/2085283593140539478",
+    publication: "X",
+    date: "Aug 6, 2026",
+  },
+  {
     title: "Solana Governance: A Comprehensive Analysis",
     author: "Lostin",
     url: "https://www.helius.dev/blog/solana-governance--a-comprehensive-analysis",
