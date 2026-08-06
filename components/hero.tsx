@@ -24,9 +24,12 @@ export function Hero() {
             <FileText className="h-4 w-4" />
             <span>Community Initiative</span>
           </div>
-          <p className="mx-auto mb-6 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl">
+          <p className="mx-auto mb-4 max-w-2xl text-pretty text-lg leading-relaxed text-muted-foreground sm:text-xl">
             A community-driven initiative to establish foundational governance principles for the Solana ecosystem, led
             by industry leaders and shaped by community voices.
+          </p>
+          <p className="mx-auto mb-6 max-w-2xl text-sm text-muted-foreground/80">
+            Independent community resource — not affiliated with Solana Labs or the Solana Foundation.
           </p>
           <div className="mx-auto flex max-w-xl flex-col gap-3">
             <a

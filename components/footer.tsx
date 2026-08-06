@@ -4,6 +4,19 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-background py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <p className="mx-auto mb-8 max-w-2xl text-center text-sm leading-relaxed text-muted-foreground">
+          This is an independent community resource maintained by H2O Nodes. It is not affiliated with, endorsed by, or
+          operated by Solana Labs, the Solana Foundation, or any official Solana entity. Official voting takes place at{" "}
+          <a
+            href="https://governance.solana.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline underline-offset-2 transition-colors hover:text-foreground"
+          >
+            governance.solana.com
+          </a>
+          .
+        </p>
         <div className="flex items-center justify-center gap-2">
           <span className="text-sm text-muted-foreground">Vibe coded by</span>
           <a
