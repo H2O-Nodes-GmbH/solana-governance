@@ -33,7 +33,8 @@ async function getPullRequests(): Promise<PullRequest[] | null> {
       return null
     }
 
-    return (await res.json()) as PullRequest[]
+    const pullRequests = (await res.json()) as PullRequest[]
+    return pullRequests.filter((pr) => /SGP-\d+/i.test(pr.title))
   } catch (error) {
     console.log("[v0] Error fetching SGPs:", error)
     return null
