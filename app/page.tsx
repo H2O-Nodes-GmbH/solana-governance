@@ -1,5 +1,6 @@
 import { Hero } from "@/components/hero"
 import { SGPs } from "@/components/sgps"
+import { ValidatorVotes } from "@/components/validator-votes"
 import { Documents } from "@/components/documents"
 import { VideoPrimer } from "@/components/video-primer"
 import { GovernancePhases } from "@/components/governance-phases"
@@ -91,6 +92,7 @@ export default function Home() {
       <main className="min-h-screen">
         <Hero />
         <SGPs />
+        <ValidatorVotes />
         <VideoPrimer />
         <GovernancePhases />
         <Blog />
